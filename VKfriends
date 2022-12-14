@@ -1,4 +1,4 @@
-var counter_need = 40;
+var counter_need = 50;
 var timer = 10000;
 (async () => {
     for (var i = 0; i < counter_need; i++) {
