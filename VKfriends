@@ -1,0 +1,15 @@
+var counter_need = 40;
+var timer = 10000;
+(async () => {
+    for (var i = 0; i < counter_need; i++) {
+        document.getElementsByClassName("friends_find_user_add")[i].click();
+        await delay();
+    }
+    console.log("Готово!");
+})();
+
+function delay() {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, timer);
+    });
+}
